@@ -10,7 +10,7 @@
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="2757" producer="black"/>
+  <entry in="0" out="7223" producer="black"/>
  </playlist>
  <producer in="0" out="148183" id="48_6">
   <property name="mlt_type">producer</property>
@@ -51,7 +51,7 @@
     <property name="gain">0</property>
     <property name="end">1</property>
    </filter>
-   <filter in="21713" out="21753" id="fadeout">
+   <filter in="21163" out="21203" id="fadeout">
     <property name="track">0</property>
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
@@ -168,6 +168,34 @@
     <property name="end">0</property>
    </filter>
   </entry>
+  <blank length="946"/>
+  <entry in="41269" out="43949" producer="48_5">
+   <filter in="41269" out="41279" id="filter5">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadein</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0</property>
+    <property name="end">1</property>
+   </filter>
+   <filter in="43874" out="43949" id="filter6">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <producer in="0" out="148183" id="48_4">
   <property name="mlt_type">producer</property>
@@ -195,7 +223,7 @@
  <playlist id="playlist2">
   <blank length="1797"/>
   <entry in="20048" out="20442" producer="48_4">
-   <filter in="20048" out="20053" id="filter5">
+   <filter in="20048" out="20053" id="filter7">
     <property name="track">0</property>
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
@@ -208,7 +236,7 @@
     <property name="gain">0</property>
     <property name="end">1</property>
    </filter>
-   <filter in="20420" out="20443" id="filter6">
+   <filter in="20420" out="20443" id="filter8">
     <property name="track">0</property>
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
@@ -222,6 +250,35 @@
     <property name="end">0</property>
    </filter>
   </entry>
+  <blank length="3162"/>
+  <entry in="57694" out="59563" producer="48_4">
+   <filter in="57694" out="57769" id="filter9">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadein</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">0</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+   <filter in="59188" out="59563" id="filter10">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <producer in="0" out="677" id="slowmotion:32_0:0,33">
   <property name="mlt_type">producer</property>
@@ -232,15 +289,15 @@
   <property name="mlt_service">framebuffer</property>
   <property name="strobe">1</property>
  </producer>
- <producer in="0" out="150" id="49">
+ <producer in="0" out="336" id="49">
   <property name="mlt_type">producer</property>
-  <property name="length">151</property>
+  <property name="length">337</property>
   <property name="eof">pause</property>
   <property name="resource">0x000000ff</property>
   <property name="aspect_ratio">1</property>
   <property name="mlt_service">colour</property>
  </producer>
- <producer in="0" out="3284" id="22_3">
+ <producer in="0" out="3284" id="22_4_video">
   <property name="mlt_type">producer</property>
   <property name="length">3285</property>
   <property name="eof">pause</property>
@@ -277,7 +334,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -288,7 +345,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="3920" id="3_3">
+ <producer in="0" out="3920" id="3_4_video">
   <property name="mlt_type">producer</property>
   <property name="length">3921</property>
   <property name="eof">pause</property>
@@ -325,7 +382,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -336,7 +393,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="1818" id="4_3">
+ <producer in="0" out="1818" id="4_4_video">
   <property name="mlt_type">producer</property>
   <property name="length">1819</property>
   <property name="eof">pause</property>
@@ -373,7 +430,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -384,7 +441,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="4437" id="2_3">
+ <producer in="0" out="4437" id="2_4_video">
   <property name="mlt_type">producer</property>
   <property name="length">4438</property>
   <property name="eof">pause</property>
@@ -421,7 +478,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -432,7 +489,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="3920" id="39_3">
+ <producer in="0" out="3920" id="39_4_video">
   <property name="mlt_type">producer</property>
   <property name="length">3921</property>
   <property name="eof">pause</property>
@@ -469,7 +526,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -480,7 +537,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="19346" id="40_3">
+ <producer in="0" out="19346" id="40_6_video">
   <property name="mlt_type">producer</property>
   <property name="length">19347</property>
   <property name="eof">pause</property>
@@ -517,7 +574,7 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
   <property name="meta.media.frame_rate_num">25</property>
@@ -528,7 +585,7 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="526" id="7_3">
+ <producer in="0" out="526" id="7_5_video">
   <property name="mlt_type">producer</property>
   <property name="length">527</property>
   <property name="eof">pause</property>
@@ -565,18 +622,11 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
-  <property name="meta.media.frame_rate_num">25</property>
-  <property name="meta.media.frame_rate_den">1</property>
-  <property name="meta.media.colorspace">709</property>
-  <property name="meta.media.width">1920</property>
-  <property name="meta.media.height">1080</property>
-  <property name="meta.media.top_field_first">1</property>
-  <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="1512" id="10_3">
+ <producer in="0" out="1512" id="10_5_video">
   <property name="mlt_type">producer</property>
   <property name="length">1513</property>
   <property name="eof">pause</property>
@@ -613,11 +663,11 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
  </producer>
- <producer in="0" out="406" id="25_3">
+ <producer in="0" out="406" id="25_5_video">
   <property name="mlt_type">producer</property>
   <property name="length">407</property>
   <property name="eof">pause</property>
@@ -654,9 +704,530 @@
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <producer in="0" out="19886" id="43_5_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">19887</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0094_02/777_0094_02.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <producer in="0" out="1304" id="9_4_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">1305</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0012_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="19886" id="43_4_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">19887</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0094_02/777_0094_02.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="237" id="29_4_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">238</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0082_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="2790" id="12_4_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">2791</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0016_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:13:01</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:13:01</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:13:01</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="2258" id="13_3_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">2259</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0017_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:21:40</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:21:40</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:21:40</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="19886" id="45_3_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">19887</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0094_04/777_0094_04.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 14:20:34</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 14:20:34</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 14:20:34</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="180" id="30_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">181</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0085_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 12:02:53</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 12:02:53</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 12:02:53</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
   <property name="audio_index">1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="2630" id="58_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">2631</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0031_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 16:03:21</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 16:03:21</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 16:03:21</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="4457" id="17_3_video">
+  <property name="mlt_type">producer</property>
+  <property name="length">4458</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0027_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:55:07</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:55:07</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:55:07</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="19430" id="41_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">19431</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0052_02/777_0052_02.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 18:12:31</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 18:12:31</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 18:12:31</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
  </producer>
  <producer in="0" out="19886" id="43_3">
   <property name="mlt_type">producer</property>
@@ -706,11 +1277,11 @@
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="1304" id="9_3">
+ <producer in="0" out="19430" id="41_3_video">
   <property name="mlt_type">producer</property>
-  <property name="length">1305</property>
+  <property name="length">19431</property>
   <property name="eof">pause</property>
-  <property name="resource">montage_groolot_en-vrai_foret/777_0012_01.MP4</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0052_02/777_0052_02.MP4</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">25</property>
@@ -724,7 +1295,7 @@
   <property name="meta.media.0.codec.name">mpeg2video</property>
   <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
   <property name="meta.media.0.codec.bit_rate">35000000</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 18:12:31</property>
   <property name="meta.attr.0.stream.language.markup">eng</property>
   <property name="meta.media.1.stream.type">audio</property>
   <property name="meta.media.1.codec.sample_fmt">s16</property>
@@ -733,25 +1304,32 @@
   <property name="meta.media.1.codec.name">pcm_s16be</property>
   <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
   <property name="meta.media.1.codec.bit_rate">0</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 18:12:31</property>
   <property name="meta.attr.1.stream.language.markup">eng</property>
   <property name="meta.attr.major_brand.markup">mp42</property>
   <property name="meta.attr.minor_version.markup">0</property>
   <property name="meta.attr.compatible_brands.markup">mp42</property>
-  <property name="meta.attr.creation_time.markup">2014-07-08 14:58:09</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 18:12:31</property>
   <property name="seekable">1</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
   <property name="aspect_ratio">1</property>
-  <property name="audio_index">1</property>
+  <property name="audio_index">-1</property>
   <property name="video_index">0</property>
   <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
  </producer>
- <producer in="0" out="237" id="29_3">
+ <producer in="0" out="2509" id="15_3">
   <property name="mlt_type">producer</property>
-  <property name="length">238</property>
+  <property name="length">2510</property>
   <property name="eof">pause</property>
-  <property name="resource">montage_groolot_en-vrai_foret/777_0082_01.MP4</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0019_01.MP4</property>
   <property name="meta.media.nb_streams">2</property>
   <property name="meta.media.0.stream.type">video</property>
   <property name="meta.media.0.stream.frame_rate">25</property>
@@ -765,7 +1343,7 @@
   <property name="meta.media.0.codec.name">mpeg2video</property>
   <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
   <property name="meta.media.0.codec.bit_rate">35000000</property>
-  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:32:12</property>
   <property name="meta.attr.0.stream.language.markup">eng</property>
   <property name="meta.media.1.stream.type">audio</property>
   <property name="meta.media.1.codec.sample_fmt">s16</property>
@@ -774,12 +1352,12 @@
   <property name="meta.media.1.codec.name">pcm_s16be</property>
   <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
   <property name="meta.media.1.codec.bit_rate">0</property>
-  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:32:12</property>
   <property name="meta.attr.1.stream.language.markup">eng</property>
   <property name="meta.attr.major_brand.markup">mp42</property>
   <property name="meta.attr.minor_version.markup">0</property>
   <property name="meta.attr.compatible_brands.markup">mp42</property>
-  <property name="meta.attr.creation_time.markup">2014-07-09 11:58:53</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:32:12</property>
   <property name="seekable">1</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
@@ -794,6 +1372,518 @@
   <property name="meta.media.height">1080</property>
   <property name="meta.media.top_field_first">1</property>
   <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="217" id="27_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">218</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0077_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:55:12</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:55:12</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 11:55:12</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="228" id="23_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">229</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0056_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:30:16</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:30:16</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 11:30:16</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="2509" id="34_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">2510</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0019_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:32:12</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:32:12</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:32:12</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="2214" id="16_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">2215</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0026_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:40:28</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:40:28</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:40:28</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="187" id="11_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">188</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0014_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-08 15:09:39</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-08 15:09:39</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-08 15:09:39</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="170" id="28_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">171</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0080_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:57:37</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:57:37</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 11:57:37</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="545" id="26_3">
+  <property name="mlt_type">producer</property>
+  <property name="length">546</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0072_01.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 11:49:30</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 11:49:30</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 11:49:30</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="249" id="59">
+  <property name="mlt_type">producer</property>
+  <property name="length">250</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="fr_FR.UTF-8">
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="94" y="294">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">_durée 45'
+_2 personnes
+_installation 4h
+_dispositif quadriphonique&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="249" id="60">
+  <property name="mlt_type">producer</property>
+  <property name="length">250</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="fr_FR.UTF-8">
+ &lt;item z-index="4" type="QGraphicsTextItem">
+  &lt;position x="143" y="737,8787878787879">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler" font-outline="0">http://en-vrai.groolot.net&lt;/content>
+ &lt;/item>
+ &lt;item z-index="4" type="QGraphicsTextItem">
+  &lt;position x="305" y="445">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="150" font-italic="0" font-underline="0" font-weight="50" font="Adler">(+33) 2.43.82.33.49&lt;/content>
+ &lt;/item>
+ &lt;item z-index="3" type="QGraphicsTextItem">
+  &lt;position x="788" y="270">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="150" font-italic="0" font-underline="0" font-weight="50" font="Courier">@&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="881" y="292">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">groolot.net&lt;/content>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsTextItem">
+  &lt;position x="321" y="292">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">groolot&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="100" y="66">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">contacts:&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="1108" id="slowmotion:46_3_video:10">
+  <property name="mlt_type">producer</property>
+  <property name="length">1109</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0094_05/777_0094_05.MP4?10</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">framebuffer</property>
+  <property name="strobe">1</property>
+ </producer>
+ <producer in="0" out="335" id="61">
+  <property name="mlt_type">producer</property>
+  <property name="length">336</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="fr_FR.UTF-8">
+ &lt;item z-index="6" type="QGraphicsTextItem">
+  &lt;position x="1134" y="275">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="25" font-italic="0" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">médaille d'argent aux 7e jeux de la francophonie&lt;/content>
+ &lt;/item>
+ &lt;item z-index="5" type="QGraphicsTextItem">
+  &lt;position x="20" y="572">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">installation vidéo/nucléaire&lt;/content>
+ &lt;/item>
+ &lt;item z-index="4" type="QGraphicsTextItem">
+  &lt;position x="20" y="483">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" font-underline="0" font-weight="50" font="Adler">http://www.prypiat.fr&lt;/content>
+ &lt;/item>
+ &lt;item z-index="3" type="QGraphicsTextItem">
+  &lt;position x="1149" y="305">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" alignment="2" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">performance audiovisuelle&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="346,1612903225807" y="60,54838709677423">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="33" font-italic="0" font-underline="0" font-weight="50" font="Adler">^&lt;/content>
+ &lt;/item>
+ &lt;item z-index="1" type="QGraphicsTextItem">
+  &lt;position x="100" y="66">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="33" font-italic="0" font-underline="0" font-weight="50" font="Adler">projets du meme collectif:&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="798" y="196">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" alignment="2" font-underline="0" font-weight="50" font="Adler">http://www.plebiscite.it&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
+ </producer>
+ <producer in="0" out="161" id="62">
+  <property name="mlt_type">producer</property>
+  <property name="length">162</property>
+  <property name="eof">pause</property>
+  <property name="resource"/>
+  <property name="progressive">1</property>
+  <property name="mlt_service">kdenlivetitle</property>
+  <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="fr_FR.UTF-8">
+ &lt;item z-index="1" type="QGraphicsTextItem">
+  &lt;position x="443" y="904">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="30" font-italic="0" kdenlive-axis-y-inverted="1" font-underline="0" font-weight="50" font="Adler">enregistré en public et en filage les 8 et 9 juillet 2014
+prise de vue: laurent Delhaye
+moyens techniques: 24images
+lieu de résidence: Cie. PMO, Théatre de l'écluse (Le Mans)&lt;/content>
+ &lt;/item>
+ &lt;item z-index="0" type="QGraphicsTextItem">
+  &lt;position x="127" y="371">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">(c) 2014, grégory David, extraits du spectacle
+"groolot en vrai, version foret post-industrielle", Le Mans.
+
+Copyleft: cette oeuvre est libre, vous pouvez la copier,
+la diffuser et la modifier selon les termes de la
+Licence Art Libre http://www.artlibre.org&lt;/content>
+ &lt;/item>
+ &lt;startviewport rect="0,0,1920,1080"/>
+ &lt;endviewport rect="0,0,1920,1080"/>
+ &lt;background color="0,0,0,255"/>
+&lt;/kdenlivetitle>
+</property>
+  <property name="force_reload">0</property>
  </producer>
  <playlist id="playlist3">
   <blank length="25"/>
@@ -822,8 +1912,8 @@
    </filter>
   </entry>
   <entry in="3" out="6" producer="49"/>
-  <entry in="333" out="425" producer="22_3">
-   <filter in="333" out="339" id="filter7">
+  <entry in="333" out="425" producer="22_4_video">
+   <filter in="333" out="339" id="filter11">
     <property name="track">0</property>
     <property name="start">0</property>
     <property name="mlt_type">filter</property>
@@ -834,7 +1924,7 @@
     <property name="kdenlive_info"/>
     <property name="end">1</property>
    </filter>
-   <filter in="388" out="425" id="filter8">
+   <filter in="388" out="425" id="filter12">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -847,8 +1937,8 @@
    </filter>
   </entry>
   <entry in="3" out="76" producer="49"/>
-  <entry in="500" out="650" producer="22_3">
-   <filter in="613" out="650" id="filter9">
+  <entry in="500" out="650" producer="22_4_video">
+   <filter in="613" out="650" id="filter13">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -861,8 +1951,8 @@
    </filter>
   </entry>
   <entry in="3" out="76" producer="49"/>
-  <entry in="725" out="876" producer="22_3">
-   <filter in="839" out="876" id="filter10">
+  <entry in="725" out="876" producer="22_4_video">
+   <filter in="839" out="876" id="filter14">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -875,8 +1965,8 @@
    </filter>
   </entry>
   <entry in="3" out="150" producer="49"/>
-  <entry in="1025" out="1222" producer="22_3">
-   <filter in="1146" out="1222" id="filter11">
+  <entry in="1025" out="1222" producer="22_4_video">
+   <filter in="1146" out="1222" id="filter15">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -888,14 +1978,14 @@
     <property name="end">0</property>
    </filter>
   </entry>
-  <entry in="0" out="24" producer="49"/>
-  <entry in="407" out="503" producer="3_3"/>
-  <entry in="541" out="643" producer="4_3"/>
-  <entry in="865" out="998" producer="2_3"/>
-  <entry in="2210" out="2310" producer="39_3"/>
+  <blank length="25"/>
+  <entry in="407" out="503" producer="3_4_video"/>
+  <entry in="541" out="643" producer="4_4_video"/>
+  <entry in="865" out="998" producer="2_4_video"/>
+  <entry in="2210" out="2310" producer="39_4_video"/>
   <entry in="0" out="4" producer="49"/>
-  <entry in="5340" out="5537" producer="40_3">
-   <filter in="5340" out="5346" id="filter12">
+  <entry in="5340" out="5537" producer="40_6_video">
+   <filter in="5340" out="5346" id="filter16">
     <property name="track">0</property>
     <property name="start">0</property>
     <property name="mlt_type">filter</property>
@@ -907,14 +1997,124 @@
     <property name="end">1</property>
    </filter>
   </entry>
-  <entry in="351" out="464" producer="7_3"/>
-  <entry in="656" out="760" producer="10_3"/>
-  <entry in="446" out="520" producer="7_3"/>
-  <entry in="25" out="99" producer="25_3"/>
-  <entry in="496" out="693" producer="43_3"/>
-  <entry in="775" out="947" producer="9_3"/>
-  <entry in="867" out="972" producer="43_3"/>
-  <entry in="0" out="85" producer="29_3"/>
+  <entry in="351" out="464" producer="7_5_video"/>
+  <entry in="656" out="760" producer="10_5_video"/>
+  <entry in="446" out="520" producer="7_5_video"/>
+  <entry in="25" out="99" producer="25_5_video"/>
+  <entry in="496" out="693" producer="43_5_video"/>
+  <entry in="775" out="947" producer="9_4_video"/>
+  <entry in="867" out="972" producer="43_4_video"/>
+  <entry in="0" out="74" producer="29_4_video">
+   <filter in="63" out="74" id="filter17">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <blank length="35"/>
+  <entry in="192" out="327" producer="12_4_video">
+   <filter in="192" out="203" id="filter18">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="1836" out="1940" producer="13_3_video"/>
+  <blank length="145"/>
+  <entry in="760" out="859" producer="13_3_video"/>
+  <entry in="509" out="1038" producer="45_3_video"/>
+  <entry in="0" out="42" producer="30_3">
+   <filter out="13" id="filter19">
+    <property name="track">0</property>
+    <property name="start">0</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_from_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">1</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="817" out="882" producer="58_3"/>
+  <entry in="1183" out="1299" producer="17_3_video"/>
+  <entry in="10028" out="10099" producer="41_3"/>
+  <entry in="9055" out="9361" producer="43_3"/>
+  <entry in="10243" out="10367" producer="41_3_video"/>
+  <entry in="450" out="574" producer="15_3"/>
+  <entry in="123" out="197" producer="27_3"/>
+  <entry in="87" out="161" producer="23_3"/>
+  <entry in="1450" out="1574" producer="34_3"/>
+  <entry in="1562" out="1711" producer="16_3"/>
+  <entry in="52" out="126" producer="11_3"/>
+  <entry in="29" out="103" producer="28_3"/>
+  <entry in="25" out="174" producer="26_3"/>
+  <blank length="75"/>
+  <entry in="0" out="249" producer="59">
+   <filter in="213" out="249" id="filter20">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="249" producer="60">
+   <filter in="212" out="249" id="filter21">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="151" out="1108" producer="slowmotion:46_3_video:10">
+   <filter in="983" out="1108" id="filter22">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">2</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
+  <entry in="0" out="174" producer="61"/>
+  <entry in="0" out="161" producer="62">
+   <filter in="124" out="161" id="filter23">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <producer in="0" out="124" id="50">
   <property name="mlt_type">producer</property>
@@ -951,11 +2151,35 @@
   <property name="progressive">1</property>
   <property name="mlt_service">kdenlivetitle</property>
   <property name="xmldata">&lt;kdenlivetitle width="1920" duration="125" height="1080" LC_NUMERIC="fr_FR.UTF-8">
+ &lt;item z-index="3" type="QGraphicsTextItem">
+  &lt;position x="1626,666666666667" y="180,5555555555555">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler" font-outline="0">)&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="1346,888888888889" y="227,0000000000001">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-outline-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler" font-outline="0">(&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="521,2121212121212" y="642,4242424242425">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="200" font-italic="0" font-underline="0" font-weight="50" font="Adler">^&lt;/content>
+ &lt;/item>
  &lt;item z-index="2" type="QGraphicsTextItem">
   &lt;position x="290,9085234366133" y="801,0095335376234">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
   &lt;content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">post-industrielle&lt;/content>
+ &lt;/item>
+ &lt;item z-index="2" type="QGraphicsTextItem">
+  &lt;position x="1368,181818181818" y="217,4242424242424">
+   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
+  &lt;/position>
+  &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">extraits&lt;/content>
  &lt;/item>
  &lt;item z-index="1" type="QGraphicsTextItem">
   &lt;position x="151,5032345931222" y="659,1680853478605">
@@ -964,7 +2188,7 @@
   &lt;content font-color="255,255,255,255" font-pixel-size="200" font-italic="0" font-underline="0" font-weight="50" font="Adler">foret&lt;/content>
  &lt;/item>
  &lt;item z-index="0" type="QGraphicsTextItem">
-  &lt;position x="333,0951230316944" y="654,9885224115018">
+  &lt;position x="207,0951230316944" y="611,9885224115018">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
   &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">version&lt;/content>
@@ -988,7 +2212,7 @@
   &lt;position x="1138,636363636364" y="865,909090909091">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
-  &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">sandra guillen&lt;/content>
+  &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">sandra Guillen&lt;/content>
  &lt;/item>
  &lt;item z-index="3" type="QGraphicsTextItem">
   &lt;position x="91,69696969696969" y="237,9393939393939">
@@ -1006,7 +2230,7 @@
   &lt;position x="842,4242424242423" y="114,5151515151515">
    &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>
   &lt;/position>
-  &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">grégory david&lt;/content>
+  &lt;content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">grégory David&lt;/content>
  &lt;/item>
  &lt;item z-index="2" type="QGraphicsTextItem">
   &lt;position x="1049,346533616196" y="708,475419711375">
@@ -1039,10 +2263,66 @@
 </property>
   <property name="force_reload">0</property>
  </producer>
+ <producer in="0" out="4227" id="slowmotion:12_1_video:0,66">
+  <property name="mlt_type">producer</property>
+  <property name="length">4228</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0016_01.MP4?0,66</property>
+  <property name="aspect_ratio">1</property>
+  <property name="mlt_service">framebuffer</property>
+ </producer>
+ <producer in="0" out="19886" id="43_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">19887</property>
+  <property name="eof">pause</property>
+  <property name="resource">montage_groolot_en-vrai_foret/777_0094_02/777_0094_02.MP4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg2video</property>
+  <property name="meta.media.0.codec.long_name">MPEG-2 video</property>
+  <property name="meta.media.0.codec.bit_rate">35000000</property>
+  <property name="meta.attr.0.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.0.stream.language.markup">eng</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">s16</property>
+  <property name="meta.media.1.codec.sample_rate">48000</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">pcm_s16be</property>
+  <property name="meta.media.1.codec.long_name">PCM signed 16-bit big-endian</property>
+  <property name="meta.media.1.codec.bit_rate">0</property>
+  <property name="meta.attr.1.stream.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="meta.attr.1.stream.language.markup">eng</property>
+  <property name="meta.attr.major_brand.markup">mp42</property>
+  <property name="meta.attr.minor_version.markup">0</property>
+  <property name="meta.attr.compatible_brands.markup">mp42</property>
+  <property name="meta.attr.creation_time.markup">2014-07-09 14:06:29</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">1</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
  <playlist id="playlist4">
   <blank length="342"/>
   <entry in="0" out="73" producer="50">
-   <filter in="36" out="73" id="filter13">
+   <filter in="36" out="73" id="filter24">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -1056,7 +2336,7 @@
   </entry>
   <blank length="151"/>
   <entry in="0" out="73" producer="52">
-   <filter in="36" out="73" id="filter14">
+   <filter in="36" out="73" id="filter25">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -1070,7 +2350,7 @@
   </entry>
   <blank length="152"/>
   <entry in="0" out="147" producer="51">
-   <filter in="110" out="147" id="filter15">
+   <filter in="110" out="147" id="filter26">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -1082,14 +2362,22 @@
     <property name="end">0</property>
    </filter>
   </entry>
+  <blank length="2058"/>
+  <entry in="1506" out="1650" producer="slowmotion:12_1_video:0,66"/>
+  <blank length="928"/>
+  <entry in="9645" out="9951" producer="43_2"/>
  </playlist>
  <playlist id="playlist5"/>
  <playlist id="playlist6">
   <entry in="0" out="24" producer="49"/>
-  <blank length="2708"/>
+  <blank length="1114"/>
   <entry in="0" out="24" producer="49"/>
+  <blank length="1559"/>
+  <entry in="0" out="34" producer="49"/>
+  <blank length="2596"/>
+  <entry in="0" out="74" producer="49"/>
  </playlist>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="2757" id="maintractor">
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="7223" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist0"/>
@@ -1156,7 +2444,7 @@
  </tractor>
  <kdenlivedoc profile="atsc_1080i_50" kdenliveversion="0.9.8" version="0,88" projectfolder="/home/groolot/montage_groolot_en-vrai_foret">
   <customeffects/>
-  <documentproperties documentid="1408701929029" renderdestination="" renderrescalewidth="800" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="WebM" renderrescaleheight="450" zonein="0" renderrescale="1" renderscanning="1" renderurl="/home/groolot/montage_groolot_en-vrai_foret/test.webm" rendertwopass="1" renderplay="0" position="2650" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="1" rendercategory="Web" zoneout="2758" renderzone="1" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 640x360 -vb 700k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1408701929029" renderdestination="" renderrescalewidth="800" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="WebM" renderrescaleheight="450" zonein="0" renderrescale="1" renderscanning="1" renderurl="/home/groolot/montage_groolot_en-vrai_foret/test.webm" rendertwopass="1" renderplay="0" position="7164" proxyminsize="1000" renderstartguide="-1" zoom="5" renderratio="1" rendercategory="Web" zoneout="7348" renderzone="1" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 640x360 -vb 700k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata meta.attr.year.markup="2014" meta.attr.author.markup="Gregory DAVID 'aka' groolot" meta.attr.title.markup="TEASER : groolot en vrai - version forêt post-industrielle" meta.attr.copyright.markup="Licence Art Libre"/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -1173,13 +2461,14 @@ p, li { white-space: pre-wrap; }
    <trackinfo blind="0" mute="1" locked="0" trackname="Video 2"/>
    <trackinfo blind="0" mute="1" locked="0" trackname="Video 1"/>
   </tracksinfo>
-  <folder opened="1" id="1" name="Scie"/>
+  <folder id="1" name="Scie"/>
   <folder id="2" name="Décor/Console"/>
   <folder id="3" name="Sable"/>
   <folder id="4" name="Cloche"/>
   <folder id="5" name="Volcan"/>
   <folder id="6" name="Filages"/>
   <folder id="7" name="Public"/>
+  <folder id="8" name="Fumées"/>
   <kdenlive_producer audio_max="14" id="1" pix_fmt="yuv420p" default_video="0" description="Plan fixe sans activité" fps="25" analysisdata="" name="777_0002_01.MP4" videocodecid="mpeg2video" zone_out="391" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0002_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="1358" groupid="2" file_hash="e3c56fba3aeb536bff310134e17c9783" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Décor/Console" type="3" zone_in="0" frame_size="1920x1080" file_size="243921807">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 14:14:09</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
@@ -1280,7 +2569,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="22" id="12" pix_fmt="yuv420p" default_video="0" description="&quot;Plan moyen de face sur grande scie et console&#xa;Focus sur grande scie&#xa;Réglage console + frottement grande scie&quot;&#xa;" fps="25" analysisdata="" name="777_0016_01.MP4" videocodecid="mpeg2video" zone_out="2790" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0016_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2791" groupid="1" file_hash="4ec89c147734d985d523c98224c5c85a" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="0" frame_size="1920x1080" file_size="509735821">
+  <kdenlive_producer audio_max="22" id="12" pix_fmt="yuv420p" default_video="0" description="&quot;Plan moyen de face sur grande scie et console&#xa;Focus sur grande scie&#xa;Réglage console + frottement grande scie&quot;&#xa;" fps="25" analysisdata="" name="777_0016_01.MP4" videocodecid="mpeg2video" zone_out="1153" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0016_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2791" groupid="1" file_hash="4ec89c147734d985d523c98224c5c85a" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="1021" frame_size="1920x1080" file_size="509735821">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 15:13:01</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 15:13:01</metaproperty>
@@ -1290,7 +2579,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="35" id="13" pix_fmt="yuv420p" default_video="0" description="&quot;Plan moyen de profile sur grande scie et console&#xa;Focus sur cocon&quot;" fps="25" analysisdata="" name="777_0017_01.MP4" videocodecid="mpeg2video" zone_out="1200" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0017_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2259" groupid="1" file_hash="c68b1382aaab828c7dbc477edd86b673" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="225" frame_size="1920x1080" file_size="412439709">
+  <kdenlive_producer audio_max="35" id="13" pix_fmt="yuv420p" default_video="0" description="&quot;Plan moyen de profile sur grande scie et console&#xa;Focus sur cocon&quot;" fps="25" analysisdata="" name="777_0017_01.MP4" videocodecid="mpeg2video" zone_out="908" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0017_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2259" groupid="1" file_hash="c68b1382aaab828c7dbc477edd86b673" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="664" frame_size="1920x1080" file_size="412439709">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 15:21:40</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 15:21:40</metaproperty>
@@ -1330,7 +2619,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="29" id="17" pix_fmt="yuv420p" default_video="0" description="Fumée dans vase globe plan général&#xa;Gros plan sur fumée dans vase globe" fps="25" analysisdata="" name="777_0027_01.MP4" videocodecid="mpeg2video" zone_out="1300" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0027_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="4458" groupid="2" file_hash="cb77c9325c72a8503828c7073562cb46" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Décor/Console" type="3" zone_in="1000" frame_size="1920x1080" file_size="812329305">
+  <kdenlive_producer audio_max="29" id="17" pix_fmt="yuv420p" default_video="0" description="Fumée dans vase globe plan général&#xa;Gros plan sur fumée dans vase globe" fps="25" analysisdata="" name="777_0027_01.MP4" videocodecid="mpeg2video" zone_out="1300" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0027_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="4458" groupid="8" file_hash="cb77c9325c72a8503828c7073562cb46" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Fumées" type="3" zone_in="1000" frame_size="1920x1080" file_size="812329305">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 15:55:07</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 15:55:07</metaproperty>
@@ -1430,7 +2719,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="5" id="27" pix_fmt="yuv420p" default_video="0" description="Focus bonhomme monte sur sable&#xa;" fps="25" analysisdata="" name="777_0077_01.MP4" videocodecid="mpeg2video" zone_out="202" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0077_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="218" groupid="2" file_hash="9825763bf41afd31a92b923be2fe6a06" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Décor/Console" type="3" zone_in="62" frame_size="1920x1080" file_size="39485008">
+  <kdenlive_producer audio_max="5" id="27" pix_fmt="yuv420p" default_video="0" description="Focus bonhomme monte sur sable&#xa;" fps="25" analysisdata="" name="777_0077_01.MP4" videocodecid="mpeg2video" zone_out="202" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0077_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="218" groupid="2" file_hash="9825763bf41afd31a92b923be2fe6a06" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Décor/Console" type="3" zone_in="123" frame_size="1920x1080" file_size="39485008">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-09 11:55:12</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-09 11:55:12</metaproperty>
@@ -1490,7 +2779,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="35" id="33" pix_fmt="yuv420p" default_video="0" description="&quot;Gros plan de profile sur grande scie&#xa;Focus sur lierre&quot;" fps="25" analysisdata="" name="777_0017_01.MP4" videocodecid="mpeg2video" zone_out="2125" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0017_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2259" groupid="1" file_hash="c68b1382aaab828c7dbc477edd86b673" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="1725" frame_size="1920x1080" file_size="412439709">
+  <kdenlive_producer audio_max="35" id="33" pix_fmt="yuv420p" default_video="0" description="&quot;Gros plan de profile sur grande scie&#xa;Focus sur lierre&quot;" fps="25" analysisdata="" name="777_0017_01.MP4" videocodecid="mpeg2video" zone_out="2125" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0017_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2259" groupid="1" file_hash="c68b1382aaab828c7dbc477edd86b673" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Scie" type="3" zone_in="1825" frame_size="1920x1080" file_size="412439709">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 15:21:40</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 15:21:40</metaproperty>
@@ -1550,7 +2839,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="29" id="35" pix_fmt="yuv420p" default_video="0" description="Gros plan sur fumée dans vase globe&#xa;" fps="25" analysisdata="" name="777_0027_01.MP4" videocodecid="mpeg2video" zone_out="2900" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0027_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="4458" groupid="2" file_hash="cb77c9325c72a8503828c7073562cb46" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Décor/Console" type="3" zone_in="2250" frame_size="1920x1080" file_size="812329305">
+  <kdenlive_producer audio_max="29" id="35" pix_fmt="yuv420p" default_video="0" description="Gros plan sur fumée dans vase globe&#xa;" fps="25" analysisdata="" name="777_0027_01.MP4" videocodecid="mpeg2video" zone_out="2900" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0027_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="4458" groupid="8" file_hash="cb77c9325c72a8503828c7073562cb46" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Fumées" type="3" zone_in="2250" frame_size="1920x1080" file_size="812329305">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 15:55:07</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 15:55:07</metaproperty>
@@ -1570,7 +2859,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="31" id="41" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0052_02.MP4" videocodecid="mpeg2video" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0052_02/777_0052_02.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19431" groupid="6" file_hash="61bb944b1c14fcbd0584e39c5a80746a" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Filages" type="3" frame_size="1920x1080" file_size="3549370465">
+  <kdenlive_producer audio_max="31" id="41" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0052_02.MP4" videocodecid="mpeg2video" zone_out="10100" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0052_02/777_0052_02.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19431" groupid="6" file_hash="61bb944b1c14fcbd0584e39c5a80746a" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Filages" type="3" zone_in="10028" frame_size="1920x1080" file_size="3549370465">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 18:12:31</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 18:12:31</metaproperty>
@@ -1590,7 +2879,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="61" id="43" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_02.MP4" videocodecid="mpeg2video" zone_out="831" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_02/777_0094_02.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19887" groupid="7" file_hash="5bd6468cebe2a2706ce9c851830378e2" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" zone_in="502" frame_size="1920x1080" file_size="3632646334">
+  <kdenlive_producer audio_max="61" id="43" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_02.MP4" videocodecid="mpeg2video" zone_out="10189" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_02/777_0094_02.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19887" groupid="7" file_hash="5bd6468cebe2a2706ce9c851830378e2" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" zone_in="9739" frame_size="1920x1080" file_size="3632646334">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-09 14:06:29</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-09 14:06:29</metaproperty>
@@ -1610,7 +2899,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="61" id="45" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_04.MP4" videocodecid="mpeg2video" thumbnail="100" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_04/777_0094_04.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19887" groupid="7" file_hash="096edc4195d66d49d8e4b63046877f7b" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" frame_size="1920x1080" file_size="3632538938">
+  <kdenlive_producer audio_max="61" id="45" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_04.MP4" videocodecid="mpeg2video" thumbnail="100" zone_out="905" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_04/777_0094_04.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="19887" groupid="7" file_hash="096edc4195d66d49d8e4b63046877f7b" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" zone_in="196" frame_size="1920x1080" file_size="3632538938">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-09 14:20:34</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-09 14:20:34</metaproperty>
@@ -1620,7 +2909,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
    <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="33" id="46" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_05.MP4" videocodecid="mpeg2video" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_05/777_0094_05.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="11099" groupid="7" file_hash="d7a6115a38eb0d9d67f21f8a33d33730" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" frame_size="1920x1080" file_size="2027185754">
+  <kdenlive_producer audio_max="33" id="46" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0094_05.MP4" videocodecid="mpeg2video" zone_out="7068" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0094_05/777_0094_05.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="11099" groupid="7" file_hash="d7a6115a38eb0d9d67f21f8a33d33730" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Public" type="3" zone_in="739" frame_size="1920x1080" file_size="2027185754">
    <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-09 14:33:49</metaproperty>
    <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
    <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-09 14:33:49</metaproperty>
@@ -1637,7 +2926,7 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.encoded_by">ZOOM Handy Recorder H4n</metaproperty>
    <metaproperty tool="" name="meta.attr.time_reference">1661158800</metaproperty>
   </kdenlive_producer>
-  <kdenlive_producer audio_max="37" id="48" analysisdata="" name="4CH001I.wav" zone_out="5155" resource="/home/groolot/montage_groolot_en-vrai_foret/4CH001I.wav" audiocodec="PCM signed 16-bit little-endian" duration="148184" groupid="7" file_hash="f661dcbd98c7c263ae6ee9da82b8e878" aspect_ratio="0" channels="2" frequency="44100" zone_in="4702" groupname="Public" type="1" frame_size="1920x1080" file_size="1045588878">
+  <kdenlive_producer audio_max="37" id="48" analysisdata="" name="4CH001I.wav" zone_out="61105" resource="/home/groolot/montage_groolot_en-vrai_foret/4CH001I.wav" audiocodec="PCM signed 16-bit little-endian" duration="148184" groupid="7" file_hash="f661dcbd98c7c263ae6ee9da82b8e878" aspect_ratio="0" channels="2" frequency="44100" zone_in="57694" groupname="Public" type="1" frame_size="1920x1080" file_size="1045588878">
    <metaproperty tool="" name="meta.attr.coding_history">A=PCM,F=44100,W=16,M=stereo,T=ZOOM Handy Recorder H4n</metaproperty>
    <metaproperty tool="" name="meta.attr.creation_time">13:26:38</metaproperty>
    <metaproperty tool="" name="meta.attr.date">2014-07-09</metaproperty>
@@ -1646,8 +2935,46 @@ p, li { white-space: pre-wrap; }
   </kdenlive_producer>
   <kdenlive_producer duration="25" frame_size="1920x1080" thumbnail="12" in="0" analysisdata="" aspect_ratio="1" mlt_service="colour" out="24" type="4" colour="0x000000ff" id="49" name="Black"/>
   <kdenlive_producer duration="125" transparency="1" zone_out="74" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;809,6774193548388&quot; y=&quot;250,9677419354838&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>en vrai&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;100&quot; y=&quot;66&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;240&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>groolot&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" zone_in="0" type="6" id="50" name="groolot en vrai"/>
-  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1138,636363636364&quot; y=&quot;865,909090909091&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>sandra guillen&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;91,69696969696969&quot; y=&quot;237,9393939393939&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>bruitiste&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;878,0178622875247&quot; y=&quot;786,2143474503027&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>brute&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;842,4242424242423&quot; y=&quot;114,5151515151515&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>grégory david&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1049,346533616196&quot; y=&quot;708,475419711375&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>scénographie&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;130&quot; y=&quot;154&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>électronique&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;820&quot; y=&quot;415&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;200&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>&amp;amp;&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;100&quot; y=&quot;66&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>poésie&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="51" name="sous--titre"/>
-  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;290,9085234366133&quot; y=&quot;801,0095335376234&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>post-industrielle&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;151,5032345931222&quot; y=&quot;659,1680853478605&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;200&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>foret&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;333,0951230316944&quot; y=&quot;654,9885224115018&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>version&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="52" name="titre"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1138,636363636364&quot; y=&quot;865,909090909091&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>sandra Guillen&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;91,69696969696969&quot; y=&quot;237,9393939393939&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>bruitiste&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;878,0178622875247&quot; y=&quot;786,2143474503027&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>brute&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;842,4242424242423&quot; y=&quot;114,5151515151515&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>grégory David&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1049,346533616196&quot; y=&quot;708,475419711375&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>scénographie&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;130&quot; y=&quot;154&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>électronique&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;820&quot; y=&quot;415&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;200&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>&amp;amp;&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;100&quot; y=&quot;66&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>poésie&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="51" name="sous-titre"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1626,666666666667&quot; y=&quot;180,5555555555555&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot; font-outline=&quot;0&quot;>)&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1346,888888888889&quot; y=&quot;227,0000000000001&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot; font-outline=&quot;0&quot;>(&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;521,2121212121212&quot; y=&quot;642,4242424242425&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;200&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>^&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;290,9085234366133&quot; y=&quot;801,0095335376234&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>post-industrielle&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1368,181818181818&quot; y=&quot;217,4242424242424&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>extraits&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;151,5032345931222&quot; y=&quot;659,1680853478605&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;200&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>foret&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;207,0951230316944&quot; y=&quot;611,9885224115018&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;50&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>version&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="52" name="titre"/>
+  <kdenlive_producer audio_max="27" audiocodec="PCM signed 16-bit little-endian" channels="2" duration="226574" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="1598710926" groupid="6" aspect_ratio="0" groupname="Filages" file_hash="2e040fa78707736d9720caf56fe9084e" type="1" id="53" name="140708-000.wav" resource="/home/groolot/montage_groolot_en-vrai_foret/140708-000.wav">
+   <metaproperty tool="" name="meta.attr.coding_history">A=PCM,F=44100,W=16,M=stereo,T=ZOOM Handy Recorder H4n</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">14:21:39</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2014-07-08</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">ZOOM Handy Recorder H4n</metaproperty>
+   <metaproperty tool="" name="meta.attr.time_reference">2279925900</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="27" audiocodec="PCM signed 16-bit little-endian" channels="2" duration="77751" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="548614286" groupid="6" aspect_ratio="0" groupname="Filages" file_hash="40e7aa76e44dd1266bfacb7c84b01f65" type="1" id="54" name="140708-001.wav" resource="/home/groolot/montage_groolot_en-vrai_foret/140708-001.wav">
+   <metaproperty tool="" name="meta.attr.coding_history">A=PCM,F=44100,W=16,M=stereo,T=ZOOM Handy Recorder H4n</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">17:57:54</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2014-07-08</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">ZOOM Handy Recorder H4n</metaproperty>
+   <metaproperty tool="" name="meta.attr.time_reference">2852123400</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="30" id="57" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0030_01.MP4" videocodecid="mpeg2video" zone_out="563" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0030_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="1379" groupid="8" file_hash="2238c496b5ca6ac797ac78f345d6ba1d" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Fumées" type="3" zone_in="474" frame_size="1920x1080" file_size="250650734">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 16:02:06</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 16:02:06</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">mp42</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-07-08 16:02:06</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="40" id="58" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="777_0031_01.MP4" videocodecid="mpeg2video" zone_out="883" colorspace="709" videocodec="MPEG-2 video" resource="/home/groolot/montage_groolot_en-vrai_foret/777_0031_01.MP4" default_audio="1" audiocodec="PCM signed 16-bit big-endian" duration="2631" groupid="8" file_hash="aabab7524c50248e77da3b6437817d42" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" groupname="Fumées" type="3" zone_in="796" frame_size="1920x1080" file_size="478349012">
+   <metaproperty tool="" name="meta.attr.0.stream.creation_time">2014-07-08 16:03:21</metaproperty>
+   <metaproperty tool="" name="meta.attr.0.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.creation_time">2014-07-08 16:03:21</metaproperty>
+   <metaproperty tool="" name="meta.attr.1.stream.language">eng</metaproperty>
+   <metaproperty tool="" name="meta.attr.compatible_brands">mp42</metaproperty>
+   <metaproperty tool="" name="meta.attr.creation_time">2014-07-08 16:03:21</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">mp42</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">0</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;94&quot; y=&quot;294&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>_durée 45'&#xa;_2 personnes&#xa;_installation 4h&#xa;_dispositif quadriphonique&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="59" name="fin1"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;143&quot; y=&quot;737,8787878787879&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-outline-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot; font-outline=&quot;0&quot;>http://en-vrai.groolot.net&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;305&quot; y=&quot;445&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;150&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>(+33) 2.43.82.33.49&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;788&quot; y=&quot;270&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;150&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Courier&quot;>@&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;881&quot; y=&quot;292&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>groolot.net&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;321&quot; y=&quot;292&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>groolot&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;100&quot; y=&quot;66&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;100&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>contacts:&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="60" name="Contacts"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;6&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1134&quot; y=&quot;275&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;25&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; kdenlive-axis-x-inverted=&quot;1&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>médaille d'argent aux 7e jeux de la francophonie&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;5&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;20&quot; y=&quot;572&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;45&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>installation vidéo/nucléaire&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;4&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;20&quot; y=&quot;483&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;75&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>http://www.prypiat.fr&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;3&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;1149&quot; y=&quot;305&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;45&quot; font-italic=&quot;0&quot; alignment=&quot;2&quot; font-underline=&quot;0&quot; kdenlive-axis-x-inverted=&quot;1&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>performance audiovisuelle&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;2&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;346,1612903225807&quot; y=&quot;60,54838709677423&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;33&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>^&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;100&quot; y=&quot;66&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;33&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>projets du meme collectif:&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;798&quot; y=&quot;196&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;75&quot; font-italic=&quot;0&quot; alignment=&quot;2&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>http://www.plebiscite.it&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="61" name="autres projets"/>
+  <kdenlive_producer duration="125" transparency="1" frame_size="1920x1080" in="0" analysisdata="" aspect_ratio="0" out="124" xmldata="&lt;kdenlivetitle width=&quot;1920&quot; duration=&quot;125&quot; height=&quot;1080&quot; LC_NUMERIC=&quot;fr_FR.UTF-8&quot;>&#xa; &lt;item z-index=&quot;1&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;443&quot; y=&quot;904&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;30&quot; font-italic=&quot;0&quot; kdenlive-axis-y-inverted=&quot;1&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>enregistré en public et en filage les 8 et 9 juillet 2014&#xa;prise de vue: laurent Delhaye&#xa;moyens techniques: 24images&#xa;lieu de résidence: Cie. PMO, Théatre de l'écluse (Le Mans)&lt;/content>&#xa; &lt;/item>&#xa; &lt;item z-index=&quot;0&quot; type=&quot;QGraphicsTextItem&quot;>&#xa;  &lt;position x=&quot;127&quot; y=&quot;371&quot;>&#xa;   &lt;transform>1,0,0,0,1,0,0,0,1&lt;/transform>&#xa;  &lt;/position>&#xa;  &lt;content font-color=&quot;255,255,255,255&quot; font-pixel-size=&quot;45&quot; font-italic=&quot;0&quot; font-underline=&quot;0&quot; font-weight=&quot;50&quot; font=&quot;Adler&quot;>(c) 2014, grégory David, extraits du spectacle&#xa;&quot;groolot en vrai, version foret post-industrielle&quot;, Le Mans.&#xa;&#xa;Copyleft: cette oeuvre est libre, vous pouvez la copier,&#xa;la diffuser et la modifier selon les termes de la&#xa;Licence Art Libre http://www.artlibre.org&lt;/content>&#xa; &lt;/item>&#xa; &lt;startviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;endviewport rect=&quot;0,0,1920,1080&quot;/>&#xa; &lt;background color=&quot;0,0,0,255&quot;/>&#xa;&lt;/kdenlivetitle>&#xa;" type="6" id="62" name="licence"/>
   <markers/>
   <groups/>
  </kdenlivedoc>
