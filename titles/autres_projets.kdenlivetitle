@@ -1,0 +1,78 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="9" type="QGraphicsTextItem">
+  <position x="1881,222222222222" y="743,4444444444445">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">)</content>
+ </item>
+ <item z-index="8" type="QGraphicsTextItem">
+  <position x="1466,777777777778" y="763,4444444444445">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">(</content>
+ </item>
+ <item z-index="7" type="QGraphicsTextItem">
+  <position x="1476,666666666667" y="758">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="25" font-italic="0" font-underline="0" font-weight="50" font="Adler">deux versions disponibles</content>
+ </item>
+ <item z-index="7" type="QGraphicsTextItem">
+  <position x="676" y="900">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" alignment="2" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">spectacle de musique électronique bruitiste
+&amp; scénographie brute</content>
+ </item>
+ <item z-index="6" type="QGraphicsTextItem">
+  <position x="1134" y="280">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="25" font-italic="0" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">médaille d'argent aux 7e jeux de la francophonie</content>
+ </item>
+ <item z-index="6" type="QGraphicsTextItem">
+  <position x="673" y="800">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" alignment="2" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">http://en-vrai.groolot.net</content>
+ </item>
+ <item z-index="5" type="QGraphicsTextItem">
+  <position x="20" y="580">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">installation vidéo/nucléaire</content>
+ </item>
+ <item z-index="4" type="QGraphicsTextItem">
+  <position x="20" y="500">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" font-underline="0" font-weight="50" font="Adler">http://www.prypiat.fr</content>
+ </item>
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="1149" y="305">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" alignment="2" font-underline="0" kdenlive-axis-x-inverted="1" font-weight="50" font="Adler">performance art numérique</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="346,1612903225807" y="60,54838709677423">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="33" font-italic="0" font-underline="0" font-weight="50" font="Adler">^</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="100" y="66">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="33" font-italic="0" font-underline="0" font-weight="50" font="Adler">projets du meme collectif:</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="798" y="200">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" alignment="2" font-underline="0" font-weight="50" font="Adler">http://www.plebiscite.it</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,0"/>
+</kdenlivetitle>

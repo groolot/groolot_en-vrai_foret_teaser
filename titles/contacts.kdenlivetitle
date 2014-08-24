@@ -1,0 +1,41 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="4" type="QGraphicsTextItem">
+  <position x="143" y="737,8787878787879">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">http://en-vrai.groolot.net</content>
+ </item>
+ <item z-index="4" type="QGraphicsTextItem">
+  <position x="305" y="495">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="150" font-italic="0" alignment="4" font-underline="0" font-weight="50" font="Adler">(+33) 2.43.82.33.49</content>
+ </item>
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="788" y="240">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="150" font-italic="0" font-underline="0" font-weight="50" font="Courier">@</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="881" y="292">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">groolot.net</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="201" y="292">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">diffusion</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="100" y="66">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">contacts:</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>

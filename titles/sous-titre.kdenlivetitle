@@ -1,0 +1,47 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="1626,666666666667" y="180,5555555555555">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">)</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="1368,181818181818" y="217,4242424242424">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">extraits</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="290,9085234366133" y="801,0095335376234">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">post-industrielle</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="521,2121212121212" y="642,4242424242425">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="200" font-italic="0" font-underline="0" font-weight="50" font="Adler">^</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="1346,888888888889" y="227,0000000000001">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">(</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="151,5032345931222" y="659,1680853478605">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="200" font-italic="0" font-underline="0" font-weight="50" font="Adler">foret</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="207,0951230316944" y="611,9885224115018">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">version</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>

@@ -1,0 +1,53 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="4" type="QGraphicsTextItem">
+  <position x="1138,636363636364" y="865,909090909091">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">sandra Guillen</content>
+ </item>
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="842,4242424242423" y="114,5151515151515">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">grégory David</content>
+ </item>
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="878,0178622875247" y="786,2143474503027">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">brute</content>
+ </item>
+ <item z-index="3" type="QGraphicsTextItem">
+  <position x="91,69696969696969" y="237,9393939393939">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">bruitiste</content>
+ </item>
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="1049,346533616196" y="708,475419711375">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">scénographie</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="820" y="415">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="200" font-italic="0" font-underline="0" font-weight="50" font="Adler">&amp;</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="130" y="154">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">électronique</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="100" y="66">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">poésie</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>

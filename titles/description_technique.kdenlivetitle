@@ -1,0 +1,34 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="2" type="QGraphicsTextItem">
+  <position x="1304,777777777778" y="763,9191919191919">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" font-underline="0" font-weight="50" font="Adler">)</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="1007,242424242424" y="797,4242424242424">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" font-underline="0" font-weight="50" font="Adler">(</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="1018,383838383838" y="783,3030303030304">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="50" font-italic="0" font-underline="0" font-weight="50" font="Adler">à prévoir</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="271" y="263">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="75" font-italic="0" font-underline="0" font-weight="50" font="Adler">durée 45'
+1 performeur + 1 technicienne
+installation 4h
+
+dispositif quadriphonique 4.1
+public sur coussin</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>

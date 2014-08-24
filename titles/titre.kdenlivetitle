@@ -1,0 +1,17 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="809,6774193548388" y="250,9677419354838">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="100" font-italic="0" font-underline="0" font-weight="50" font="Adler">en vrai</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="100" y="66">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="240" font-italic="0" font-underline="0" font-weight="50" font="Adler">groolot</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>

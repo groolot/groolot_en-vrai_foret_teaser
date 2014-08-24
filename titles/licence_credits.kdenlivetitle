@@ -1,0 +1,31 @@
+<kdenlivetitle width="1920" duration="125" height="1080" out="125" LC_NUMERIC="fr_FR.UTF-8">
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="969,4949494949494" y="420,2020202020202">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">^</content>
+ </item>
+ <item z-index="1" type="QGraphicsTextItem">
+  <position x="443" y="904">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="30" font-italic="0" kdenlive-axis-y-inverted="1" font-underline="0" font-weight="50" font="Adler">enregistré en public et en filage les 8 et 9 juillet 2014
+prise de vue: laurent Delhaye
+moyens techniques: 24images
+lieu de résidence: Cie. PMO, Théatre de l'écluse (Le Mans)</content>
+ </item>
+ <item z-index="0" type="QGraphicsTextItem">
+  <position x="165" y="371">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content font-color="255,255,255,255" font-pixel-size="45" font-italic="0" font-underline="0" font-weight="50" font="Adler">(c) 2014, grégory David, extraits du spectacle
+"groolot en vrai, version foret post-industrielle"
+
+Copyleft: cette création est libre, vous pouvez la copier,
+la diffuser et la modifier selon les termes de la
+Licence Art Libre http://www.artlibre.org</content>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,255"/>
+</kdenlivetitle>
